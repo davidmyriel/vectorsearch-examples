@@ -58,7 +58,7 @@ def process_image(client, model, image_file, collection_name="images"):
     )
 
 # Function to search images by text
-def search_images(client, model, text_query, collection_name="images", limit=5):
+def search_images(client, model, text_query, collection_name="images", limit=3):
     # Encode text query
     text_vector = model.encode(text_query)
     
